@@ -1,5 +1,17 @@
-<h2>Rails Stupid Coaching</h2>
+<h2 style="color:blue">Rails Stupid Coaching</h2>
 <form action="answer" method="get">
   <input type="text" name="question" placeholder="Make it a nice one ;)">
   <input type="submit" value="Ask your coach">
 </form>
+
+<br>
+<%= link_to 'Return to homepage', root_path %>
+
+<!-- The native behaviour of a <form> tag is to generate the HTTP request defined by the method and action attributes.
+
+the method attribute holds the HTTP verb (GET by default)
+the action attribute holds the url of the request it triggers on submit
+In the <input>, the name attribute enables you to set the key of the corresponding parameter.
+
+Here we want the form to trigger our second user story: answer, which should be routed on /answer.
+ -->

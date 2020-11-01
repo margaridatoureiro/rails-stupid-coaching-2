@@ -1,7 +1,10 @@
 class QuestionsController < ApplicationController
+  # NOT IMPORTANT
   def home
     @time = Date.today.strftime("#{Date.today.day.ordinalize} %B")
   end
+
+  # IMPORTANT
 
   def ask; end
 
